@@ -1,11 +1,13 @@
-SpecRoot = File.expand_path('..', __FILE__)
+require 'pathname'
+require 'rspec'
+require 'rspec/autorun'
+require 'mocha'
+
+SpecRoot = Pathname.new File.expand_path('..', __FILE__)
 $LOAD_PATH.unshift(SpecRoot)
 $LOAD_PATH.unshift(File.join(SpecRoot, '..', 'lib'))
 
 require 'jobviter'
-require 'rspec'
-require 'rspec/autorun'
-require 'mocha'
 
 RSpec.configure do |config|
   config.color_enabled = true

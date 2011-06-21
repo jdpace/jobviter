@@ -18,6 +18,10 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
+  # Dependencies
+  s.add_dependency 'typhoeus', ['~> 0.2.4']
+  s.add_dependency 'nokogiri', ['~> 1.4.6']
+
   # Developmnet Dependencies
   s.add_development_dependency 'rspec', ['~> 2.6']
   s.add_development_dependency 'mocha', ['~> 0.9.12']

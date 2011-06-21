@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<result>
+  <job>
+    <id>omglol42</id>
+    <title>Senior Trouble Maker</title>
+    <requisitionid>req1</requisitionid>
+    <category>Roflmao</category>
+    <jobtype>Full-Time</jobtype>
+    <location>New York, NY</location>
+    <date>7/04/2011</date>
+    <detail-url>
+      <![CDATA[http://hire.jobvite.com/CompanyJobs/Job.aspx?c=funcorp1&j=omglol42]]>
+    </detail-url>
+    <apply-url>
+      <![CDATA[http://hire.jobvite.com/CompanyJobs/Apply.aspx?c=funcorp1&j=omglol42]]>
+    </apply-url>
+    <description>
+      We're looking for serious trouble makers. Only apply if you have the following applies:
+
+      &lt;ul&gt;
+        &lt;li&gt;You're comfortable not getting any real work done.&lt;/li&gt;
+        &lt;li&gt;You'll go to any length for a laugh&lt;/li&gt;
+        &lt;li&gt;You'd prank the pope himself&lt;/li&gt;
+      &lt;/ul&gt;
+    </description>
+    <briefdescription>Come make a mockery of us and our employees.</briefdescription>
+  </job>
+  <job>
+    <id>roflcptr</id>
+    <title>Lead Shenanigan Engineer</title>
+    <requisitionid>req2</requisitionid>
+    <category>Roflmao</category>
+    <jobtype>Full-Time</jobtype>
+    <location>San Francisco, CA</location>
+    <date>7/15/2011</date>
+    <detail-url>
+      <![CDATA[http://hire.jobvite.com/CompanyJobs/Job.aspx?c=funcorp1&j=roflcptr]]>
+    </detail-url>
+    <apply-url>
+      <![CDATA[http://hire.jobvite.com/CompanyJobs/Apply.aspx?c=funcorp1&j=roflcptr]]>
+    </apply-url>
+    <description>
+      Do you consider yourself the king of shenanigans? We want to hear from you if:
+
+      &lt;ul&gt;
+        &lt;li&gt;You can create shenanigans on the spot&lt;/li&gt;
+        &lt;li&gt;You don't take anything seriously including scary stuff like spiders&lt;/li&gt;
+        &lt;li&gt;That's pretty much it LOL&lt;/li&gt;
+      &lt;/ul&gt;
+    </description>
+    <briefdescription>Shenanigans, Roflcopters, Troll faces OMGLOL</briefdescription>
+  </job>
+  <job>
+    <id>lolcat99</id>
+    <title>Executive LOL Cat Photographer</title>
+    <requisitionid>req3</requisitionid>
+    <category>LOL Cats</category>
+    <jobtype>Part-Time</jobtype>
+    <location>Washington, DC</location>
+    <date>7/01/2011</date>
+    <detail-url>
+      <![CDATA[http://hire.jobvite.com/CompanyJobs/Job.aspx?c=funcorp1&j=lolcat99]]>
+    </detail-url>
+    <apply-url>
+      <![CDATA[http://hire.jobvite.com/CompanyJobs/Apply.aspx?c=funcorp1&j=lolcat99]]>
+    </apply-url>
+    <description>
+      Is your favorite day &lt;strong&gt;Caturday&lt;/strong&gt;? Then we want to hear from you!
+    </description>
+    <briefdescription>Ceiling cat is watching you apply for jobs</briefdescription>
+  </job>
+</result>
