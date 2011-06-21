@@ -16,4 +16,25 @@ describe Jobviter::Config do
     end
   end
 
+  context "jobs_url" do
+    it 'returns the full url for the job feed' do
+      Jobviter.configure do |config|
+        config.company_id = 'abcd1234'
+      end
+
+      expected_jobs_url = Jobviter.config.base_jobs_url + 'abcd1234'
+      Jobviter.config.jobs_url.should == expected_jobs_url
+    end
+
+    it 'raises an error if the company_id is not configured' do
+      Jobviter.configure do |config|
+        config.company_id = nil
+      end
+
+      expect do
+        Jobviter.config.jobs_url
+      end.should raise_exception(Jobviter::ConfigurationError)
+    end
+  end
+
 end
