@@ -46,6 +46,8 @@ module Jobviter
     def method_missing(method, *args, &block)
       if attributes.has_key?(method) && args.empty?
         return self[method]
+      else
+        super
       end
     end
 
