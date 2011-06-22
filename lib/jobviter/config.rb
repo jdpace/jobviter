@@ -1,10 +1,4 @@
 module Jobviter
-  class ConfigurationError < StandardError
-    def initialize(msg)
-      super "Invalid Configuration: #{msg}"
-    end
-  end
-
   class Config
     attr_accessor :base_jobs_url, :company_id
 
@@ -13,7 +7,9 @@ module Jobviter
     end
 
     def jobs_url
-      raise Jobviter::ConfigurationError.new('company_id is required') unless company_id
+      unless company_id
+        raise Jobviter::Exception::InvalidConfiguration.new('company_id is required')
+      end
 
       base_jobs_url + company_id
     end

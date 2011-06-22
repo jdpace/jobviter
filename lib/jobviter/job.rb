@@ -55,15 +55,29 @@ module Jobviter
 
     def self.fetch_and_parse
       return unless raw_result = fetch
-
-      parsed_document = Nokogiri::XML(raw_result)
-      parsed_document.css 'job'
+      parse raw_result
     end
 
     def self.fetch
       response = Typhoeus::Request.get Jobviter.config.jobs_url
 
-      return response.body if response.success?
+      if response.success?
+        return response.body 
+      else
+        handle_bad_response response
+      end
+    end
+
+    def self.parse(result)
+      parsed_document = Nokogiri::XML(result)
+      parsed_document.css 'job'
+    end
+
+    def self.handle_bad_response(response)
+      error_message = response.code.to_i > 0 ?
+                        response.code :
+                        response.curl_error_message
+      raise Jobviter::Exception::BadResponse.new error_message
     end
 
     def self.node_to_attrs(node)
