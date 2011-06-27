@@ -86,7 +86,7 @@ module Jobviter
         :requisition_id     => node.at_css('requisitionid').content,
         :title              => node.at_css('title').content,
         :category           => node.at_css('category').content,
-        :type               => node.at_css('jobtype').content,
+        :job_type           => node.at_css('jobtype').content,
         :location           => node.at_css('location').content,
         :date               => node.at_css('date').content,
         :detail_url         => node.at_css('detail-url').content,

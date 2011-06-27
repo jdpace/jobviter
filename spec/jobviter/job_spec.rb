@@ -49,7 +49,7 @@ describe Jobviter::Job do
         photographer.title.should == 'Executive LOL Cat Photographer'
         photographer.requisition_id.should == 'req3'
         photographer.category.should == 'LOL Cats'
-        photographer.type.should == 'Part-Time'
+        photographer.job_type.should == 'Part-Time'
         photographer.location.should == 'Washington, DC'
         photographer.date.should == Date.parse('July, 1st 2011')
         photographer.detail_url.should == 'http://hire.jobvite.com/CompanyJobs/Job.aspx?c=funcorp1&j=lolcat99'
