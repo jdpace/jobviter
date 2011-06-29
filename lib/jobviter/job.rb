@@ -11,6 +11,10 @@ module Jobviter
       self.attributes = attrs
     end
 
+    def id
+      self[:id]
+    end
+
     def date
       return @date if defined?(@date)
 
