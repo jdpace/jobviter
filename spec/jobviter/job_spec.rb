@@ -71,7 +71,7 @@ describe Jobviter::Job do
 
       expect do
         Jobviter::Job.all
-      end.should raise_exception(Jobviter::Exception::BadResponse)
+      end.to raise_exception(Jobviter::Exception::BadResponse)
     end
   end
 
