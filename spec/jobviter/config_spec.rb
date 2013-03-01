@@ -33,7 +33,7 @@ describe Jobviter::Config do
 
       expect do
         Jobviter.config.jobs_url
-      end.should raise_exception(Jobviter::Exception::InvalidConfiguration)
+      end.to raise_exception(Jobviter::Exception::InvalidConfiguration)
     end
   end
 
