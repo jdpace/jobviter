@@ -19,11 +19,11 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   # Dependencies
-  s.add_dependency 'typhoeus', ['~> 0.2.4']
-  s.add_dependency 'nokogiri', ['~> 1.5.6']
+  s.add_dependency 'typhoeus', ['~> 0.2']
+  s.add_dependency 'nokogiri', ['~> 1.4']
 
   # Development Dependencies
   s.add_development_dependency 'rspec', ['~> 2.6']
-  s.add_development_dependency 'mocha', ['~> 0.9.12']
-  s.add_development_dependency 'rake',  ['~> 10.0.3']
+  s.add_development_dependency 'mocha', ['~> 0.9']
+  s.add_development_dependency 'rake',  ['~> 10.0']
 end
