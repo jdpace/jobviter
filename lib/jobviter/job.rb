@@ -63,10 +63,10 @@ module Jobviter
     end
 
     def self.fetch
-      response = Typhoeus::Request.get Jobviter.config.jobs_url
+      response = Typhoeus::Request.get Jobviter.config.jobs_url, :followlocation => true
 
       if response.success?
-        return response.body 
+        return response.body
       else
         handle_bad_response response
       end
