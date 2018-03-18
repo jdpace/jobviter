@@ -23,21 +23,21 @@ Installation instructions are given on their respective sites.
 Usage
 -----
 
-Below is an example of using Jobviter to pull down a list of Twitter
+Below is an example of using Jobviter to pull down a list of TiVo
 job listings.
 
     ruby > require 'jobviter'
     ruby > Jobviter.configure do |config|
-    ruby >   config.company_id = 'q8X9VfwT'
+    ruby >   config.company_id = 'q1h9Vfw6'
     ruby > end
     ruby > jobs = Jobviter::Job.all
      => 71
     ruby > job = jobs.first
      => #<Jobviter::Job:0x00000100a85600>
     ruby > job.title
-     => "Software Engineer - Tools"
+     => "Sr. Supervisor"
     ruby > job.apply_url
-     => "http://hire.jobvite.com/CompanyJobs/Apply.aspx?c=q8X9VfwT&j=oSbdVfwV"
+     => "http://app.jobvite.com/CompanyJobs/Careers.aspx?c=q1h9Vfw6&j=obuW5fwq&k=Apply"
 
 
 Contributing
